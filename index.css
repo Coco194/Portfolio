@@ -1,0 +1,387 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding-top: 10rem;
+    margin: 0;
+}
+
+/*Header start*/
+header{
+    display: flex;
+    background-color: hsl(0, 0%, 100%, 0.98);
+    justify-content: center;
+    align-items: center;
+    padding: 0% 20% 0% 20%;
+    height: 5rem;
+    gap: 35%;
+    box-shadow: 0px 0px 4px rgb(146, 146, 146);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation{
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding:0rem; 
+}
+
+.navigation li{
+    /*width: 6rem;*/
+    text-align: center;
+    padding:0rem;  
+    cursor: pointer;
+}
+
+.navigation li:hover{
+    transition: color 0.2s ease-out;
+    color: blue;
+}
+
+#logo{
+    min-width: 6rem;
+    color: #597CFB;
+}
+
+#contactbtn{
+    min-width: 6rem;
+}
+/*Header end*/
+
+
+
+
+/*Hero section start*/
+.parentflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1000px;
+    border: 0px solid red;
+}
+
+.flexleft, .flexright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 38rem;
+    width: 28%;
+    min-width: 460px;
+    border: 0px solid green;
+}
+
+.sociallink{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 2rem;
+}
+
+.sociallinkbtn{
+    height: 2.5rem;
+    width: 6rem;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 92%);
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 2rem;
+}
+
+.sociallinkbtn:hover{
+    background-color: hsl(0, 0%, 88%);
+}
+
+.techstack{
+    display: flex;
+    align-items: center;
+    margin-right: auto;    
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.techstack ul{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding:0rem; 
+    padding-left: 0.5rem;
+}
+
+.memoji{
+    width: 400px; 
+    border-radius: 5rem;
+}
+/*Font sizes, color etc*/
+.flexleft h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-right: auto;
+}
+
+.flexleft h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.flexleft p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    width: 26rem;
+    margin-right: auto;
+}
+
+.flexleft ul li{
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+/*Hero section end*/
+
+
+
+
+/*About section start*/
+.aboutparentflex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutflexleft1, .aboutflexright1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 38rem;
+    width: 28%;
+    min-width: 460px;
+}
+
+/*Font sizes, color etc*/
+.aboutflexright1 h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #597CFB;
+    margin: 0;
+    margin-right: auto;
+}
+
+.aboutflexright1 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.aboutflexright1 p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-right: 0rem;
+    margin: 0;
+    color: #4a4a4a;
+}
+/*About section end*/
+
+
+
+
+/*Project section right aligned start*/
+.projectmainparent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.projecttopic{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #597CFB;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.projectcenter1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /*Change to column reverse for mobile*/
+    height: fit-content;
+    width: 55%;
+    min-width: 900px;
+    box-shadow: 0px 0px 4px rgb(146, 146, 146);
+    /*background-color: #eff2fd;*/
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+.btnparent{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 1rem;
+}
+
+.btnchild{
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 92%);
+    border-radius: 8px;
+    border-style: none;
+    margin-top: 2rem;
+}
+
+.btnchild:hover{
+    background-color: hsl(0, 0%, 88%);
+}
+
+.projectimg{
+    width: 500px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 4px rgb(214, 214, 214);
+}
+/*Project section right aligned end*/
+
+
+/*Project section left aligned start*/
+.projectcenter2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /*Change to column reverse for mobile*/
+    height: fit-content;
+    width: 55%;
+    min-width: 900px;
+    box-shadow: 0px 0px 4px rgb(146, 146, 146);
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+/*Font sizes*/
+.projectcenter1 h2, .projectcenter2 h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.projectcenter1 p, .projectcenter2 p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+/*Project section left aligned end*/
+
+
+
+
+/*Contact section start*/
+.contactparent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: white;
+}
+
+.contactchild{
+    display: flex;
+    flex-direction: column; 
+    height: fit-content;
+    width: 55%;
+    min-width: 900px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+/*font sizes*/
+.contactchild h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #597CFB;
+}
+
+.contactchild h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0rem;
+}
+
+.contactchild p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1rem;
+    color: #2a2a2a;
+}
+/*Contact section end*/
+
+
+
+
+/*Footer start*/
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 96%, 1);
+    justify-content: center;
+    align-items: center;
+    padding: 0% 20% 0% 20%;
+    height: 6rem;
+    gap: 25%;
+    z-index: 1;
+}
+
+.footerbar{
+    display: flex;
+}
+
+.footernavigation{
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding:0rem; 
+}
+
+.footernavigation li{
+    /*width: 6rem;*/
+    text-align: center;
+    padding:0rem;  
+    cursor: pointer;
+}
+
+.footernavigation li:hover{
+    color: blue;
+}
+
+#logo{
+    min-width: 6rem;
+    color: #597CFB;
+}
+
+#scrollupbtn{
+    min-width: 6rem;
+}
+
+/*Footer end*/
