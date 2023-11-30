@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shaffaq.dev</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_media.css">
 
     <!--Inter font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,56 +18,85 @@
             <li id="logo">Shaffaq.dev</li>
         </ul>
         <ul class="navigation">
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Resume</li>
+            <a href="#"><li>Home</li></a> 
+            <a href="#aboutsection"><li>About</li></a>
+            <a href="#projectsection"><li>Projects</li></a>
+            <a href="#contactsection"><li>Contact</li></a>
         </ul>
         <ul class="navigation">
-            <li id="contactbtn">Contact me</li>
+            <li id="resumedownload">Resume</li>
+        </ul>
+        <ul class="hamburgericon">
+            <li><img src="Images/more.png" alt="Hamburger" width="20px" height="20"></li> <!--<a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by feen - Flaticon</a>-->
         </ul>
     </header>
+
+    <div class="mobile-navigation">
+        <nav>
+            <ul class="mobile-navigation-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutsection">About</a></li>
+                <li><a href="##projectsection">Projects</a></li>
+                <li><a href="#contactsection">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+
 
     <section>
         <div class="parentflex">
             <div class="flexleft">
                 <h1>Front-end developer</h1>
-                <p>Hello I am Mohamed Shaffaq. A front-end developer with a passion for UI/UX based in Sri Lanka</p>
+                <p>Hello I'm <span id="texthighlight">Mohamed Shaffaq</span>. A front-end developer with a passion for UI/UX based in <span id="texthighlight">Sri Lanka 📍</span></p>
                 <div class="sociallink">
-                    <button class="sociallinkbtn">Github</button>
-                    <button class="sociallinkbtn">LinkedIn</button>
-                </div>
-                <div class="techstack">
-                    <h2>Tech stack |</h2>
-                    <ul>
-                        <li><img src="Images/html.png" alt="" width="40px"></li> <!--<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>-->
-                        <li><img src="Images/css-3.png" alt="" width="40px"></li><!--<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>-->
-                        <li><img src="Images/js.png" alt="" width="40px"></li><!--<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>-->
-                    </ul>
+                    <img src="Images/github.png" alt="" width="30px"> <!--<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>-->
+                    <img src="Images/linkedin.png" alt="" width="30px"> <!--<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>-->
                 </div>
             </div>
             <div class="flexright">
-                <img src="Images/hello memojii edited.jpg" alt="waving memoji" class="memoji">
+                <img src="Images/hello memoji edited.jpeg" alt="waving memoji" class="memoji">
             </div>            
         </div>
     </section>
 
-    <section>
+    <section id="aboutsection">
         <div class="aboutparentflex1">
-
             <div class="aboutflexleft1">
                 <img src="Images/smile memoji.jpeg" alt="waving memoji" class="memoji" >
             </div>   
 
             <div class="aboutflexright1">
-                <h1>About me</h1>
-                <h2>Front-end developer based in Sri Lanka 📍</h2>
-                <p>As a front-end developer, my expertise lies in UI/UX where I can create dynamic and appealing websites through clean and manageable code by using cutting edge technology. </p>
-            </div>         
+                <!--<h1>About me</h1>-->
+                <h2>A dedicated Front-End Developer based in Sri Lanka 📍</h2>
+                <p>As a front-end developer, my expertise lies in UI/UX where I can create dynamic and appealing websites through clean and manageable code by using cutting edge technology. And currently I'm advancing my knowledge in React.js and back-end technologies.</p>
+                <div class="techstack">
+                    <h3>Tech stack |</h3>
+                    <ul>
+                        <li><img src="Images/html.png" alt="" width="40px"></li> <!--<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>-->
+                        <li><img src="Images/css-3.png" alt="" width="40px"></li><!--<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>-->
+                        <li><img src="Images/js.png" alt="" width="40px"></li><!--<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>-->
+                        <li><img src="Images/php.png" alt="" width="70px"></li> <!--<a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a>-->
+                    </ul>
+                </div>
+
+                <div class="mobile-techstack">
+                    <h3>Tech stack</h3>
+                    <div class="mobile-techstack-list">
+                        <ul>
+                            <li><img src="Images/html.png" alt="" width="60px"></li><!--<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>-->
+                            <li><img src="Images/css-3.png" alt="" width="60px"></li><!--<a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>-->
+                            <li><img src="Images/js.png" alt="" width="60px"></li><!--<a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>-->
+                            <li><img src="Images/php.png" alt="" width="60px"></li><!--<a href="https://www.flaticon.com/free-icons/php" title="php icons">Php icons created by Freepik - Flaticon</a>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+
         </div>
     </section>
 
-    <section>
+    <section id="projectsection">
         <div class="projectmainparent">
             <h1 class="projecttopic">Projects</h1>
                 <div class="projectcenter1">
@@ -95,13 +125,10 @@
     
             
                 <div class="projectcenter2">
-                    <img src="Project images/Journalize edit.png" alt="Journalize app screenshot" class="projectimg">
+                    <img src="Project images/Formify.png" alt="Formify website screenshot" class="projectimg">
                     <div>
-                        <h2>Journalize (November 2023)</h2>
-                        <p>A website for the Journaling mobile app Journalize. The website lets you use the browser based
-                            app to
-                            create,
-                            edit, delete journals.</p>
+                        <h2>Formify (November 2023)</h2>
+                        <p>A website which let's you create forms easily. The website let's you edit a pre-defined form fields and inputs and export it.</p>
                         <div class="techstack">
                             <ul>
                                 <li><img src="Images/html.png" alt="" width="40px"></li><!--<a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a>-->
@@ -118,36 +145,31 @@
         </div>
     </section>
 
-    <section>
+    <section id="contactsection">
         <div class="contactparent">
             <div class="contactchild">
                 <h1>Contact</h1>
-                <h2>Drop me an email or a message and let's get in touch :)</h2>
-                <p>| mohamedshaffaq@gmail.com</p>
-                <p>| Mohamed Shaffaq</p>
+                <h2>Drop me a message or just say hello and let's get in touch :)</h2>  
+                
+                <input type="text" name="" id="" placeholder="Name*">
+                <input type="text" placeholder="Email*">
+                <textarea name="" id="" placeholder="Message*"></textarea>
+                <!--Add button and also response once the button is clicked "Thanks for the message" and "If you wanna get in touch and talk about a project collab or just say hello please send me an email to @email.com"-->                    
+                             
             </div>
         </div>
     </section>
 
-    <footer>
-        
-        <ul class="navigation">
-            <li id="logo">Shaffaq.dev</li>
-        </ul>
-        <ul class="navigation">
-            <li>Home</li>
-            <li>Resume</li>
-            <li>Github</li>
-            <li>LinkedIn</li>
-        </ul>
-        <ul class="navigation">
-            <li id="contactbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/>
-                </svg>
-            </li>
-        </ul>
     
+    <footer>
+        <div class="footersocials">
+            <img src="Images/github.png" alt="" width="30px"> <!--<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Freepik - Flaticon</a>-->
+            <img src="Images/linkedin.png" alt="" width="30px"> <!--<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>-->
+        </div>
+        <div>
+            <h1>© 2023 Mohamed Shaffaq. All rights reserved.</h1>
+        </div>
     </footer>
+<script defer src="index.js"></script>
 </body>
 </html>
