@@ -167,7 +167,12 @@
         background-color: hsl(0, 0%, 88%);
     }
     
-    .memoji{
+    .memoji1{
+        width: 260px; 
+        border-radius: 2em;
+    }
+
+    .memoji2{
         width: 260px; 
         border-radius: 2em;
     }
@@ -200,7 +205,7 @@
     
     
     /*About section start*/
-    .aboutparentflex1{
+    .aboutparentflex{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -209,7 +214,7 @@
         padding: 4rem 0rem 4rem 0rem;
     }
     
-    .aboutflexleft1, .aboutflexright1{
+    .aboutflexleft, .aboutflexright{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -220,12 +225,16 @@
         margin: 0;
     }
 
-    .techstack{
+    .desktop-techstack{
         display: none;
     }
     
-    .techstack ul{
+    .desktop-techstack ul{
         display: none; 
+    }
+
+    .techstack ul :first-child{
+        display: none;
     }
 
 
@@ -251,22 +260,14 @@
     }
     
     /*Font sizes, color etc*/
-    .aboutflexright1 h1{
-        font-size: 1.8rem;
-        font-weight: 400;
-        color: #597CFB;
-        margin: 0;
-        margin-right: 0;
-    }
-    
-    .aboutflexright1 h2{
+    .aboutflexright h1{
         font-size: 2rem;
         font-weight: 500;
         text-align: center;
         margin-right: 0;
     }
 
-    .mobile-techstack h3{
+    .mobile-techstack h2{
         font-size: 1.8rem;
         font-weight: 500;
         text-align: center;
@@ -274,7 +275,7 @@
         margin: 4rem 0rem 1rem 0rem;
     }
     
-    .aboutflexright1 p{
+    .aboutflexright p{
         font-size: 1.2rem;
         font-weight: 400;
         text-align: center;
@@ -320,6 +321,27 @@
         gap: 1rem;
     }
     
+    .project-techstack{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;    
+        width: 100%;
+        margin-top: 0rem;
+    }
+    
+    .project-techstack ul{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+        padding:0rem; 
+        padding-left: 0.5rem;
+    }
+
+        
     .btnparent{
         display: flex;
         align-items: center;
@@ -327,7 +349,7 @@
         margin-right: 0;
         gap: 1rem;
     }
-    
+
     .btnchild{
         height: 2.5rem;
         width: 8rem;
@@ -381,6 +403,13 @@
         padding: 0rem 1rem 0rem 1rem;
         color: #4a4a4a;
     }
+
+    .btnchild p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: black;
+        padding: 0;
+    }
     /*Project section left aligned end*/
     
     
@@ -418,7 +447,33 @@
         width: 18rem;  
         height: 10rem;
     }
+
+    .formbtns{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
+    .formsubmit-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 20rem;
+        background-color: #597CFB;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .formreset-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 20rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
     
     /*font sizes*/
     .contactchild h1{
@@ -446,18 +501,31 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0% 20% 0% 20%;
+        padding: 0% 10% 0% 10%;
         gap: 25%;
-        z-index: 1;
     }
     
     .footersocials{
         display: flex;
         gap: 1rem;
+        margin: 1rem 0rem 2rem 0rem;
+    }
+
+    .horizontal-line{
+        height: 1px;
+        width: 100%;
+        background-color: #cbd7ff;
     }
     
     footer h1{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 2.5rem 0rem 1rem 0rem;
+    }
+
+    footer p{
+        font-size: 0.9rem;
         font-weight: 400;
         text-align: center;
         margin: 2rem 0rem 1rem 0rem;
