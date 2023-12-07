@@ -258,6 +258,12 @@
     .mobile-techstack-list ul li{
         list-style: none;
     }
+
+    .mobile-techstack ul li:hover{
+        scale: 1rem;
+        transform: scale(1.2);
+        transition: transform 0.25s;
+    }
     
     /*Font sizes, color etc*/
     .aboutflexright h1{
