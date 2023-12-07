@@ -17,3 +17,22 @@ function openmenu(){
     }
 }
 headerbtn.addEventListener('click', openmenu)
+
+
+
+
+//Intersection observer
+let aboutparentflex = document.querySelectorAll('.aboutparentflex');
+
+function animationfunction(entries){
+    function innerfunction(entry){
+        if(entry.isIntersecting){
+            entry.target.classList.add("aboutparentflexshow")
+        }
+    }
+    entries.forEach(innerfunction)
+}
+
+const observer = new IntersectionObserver(animationfunction, {threshold:0.15})
+
+observer.observe(aboutparentflex[0])
