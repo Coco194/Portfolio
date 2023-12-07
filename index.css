@@ -182,10 +182,16 @@ a {
     margin: 0;
 }
 
+.desktop-techstack ul li:hover{
+    scale: 1rem;
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
 
 .mobile-techstack{
     display: none;
 }
+
 /*Font sizes, color etc*/
 .aboutflexright h1{
     font-size: 2rem;
