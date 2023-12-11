@@ -235,7 +235,6 @@ a {
     gap: 4rem;
     padding: 10rem 0rem 12rem 0rem;
     background-color: rgb(250, 250, 250);
-    overflow-x: hidden;
 }
 
 .projecttopic{
@@ -259,13 +258,13 @@ a {
     padding: 1rem;
     gap: 4rem;
     opacity: 0;
-    transform: translateX(20%);  
-    transition: 0.5s;
+    transform: translateY(20%);  
+    transition: 0.8s;
 }
 
 .projectcenter1_active{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 .project-techstack{
@@ -336,13 +335,13 @@ a {
     padding: 1rem;
     gap: 4rem;
     opacity: 0;
-    transform: translateX(-20%);  
-    transition: 0.5s;
+    transform: translateY(20%);  
+    transition: 0.8s;
 }
 
 .projectcenter2_active{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 /*Font sizes*/
@@ -483,7 +482,6 @@ footer{
     align-items: center;
     padding: 0% 20% 0% 20%;
     gap: 25%;
-
 }
 
 .footersocials{
