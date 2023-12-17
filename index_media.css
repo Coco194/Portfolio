@@ -132,7 +132,7 @@
         height: fit-content;
         width: fit-content;
         min-width: 60px;
-        margin: 4rem 0rem 0rem 0rem;
+        margin: 0rem 0rem 0rem 0rem;
     }
 
     .flexright{
@@ -140,10 +140,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 10rem;
+        height: fit-content;
         width: fit-content;
         min-width: 60px;
-        margin: 6rem 0rem 0rem 0rem;
+        margin: 0;
+        padding: 2rem 0 0 0;
     }
     
     .sociallink{
@@ -185,8 +186,9 @@
     .flexleft h1{
         font-size: 2rem;
         font-weight: 500;
+        text-align: center;
         margin: 0;
-        margin-right: 0;
+        padding: 0rem 4rem 0rem 4rem;
     }
     
     .flexleft p{
@@ -196,7 +198,7 @@
         color: #6a6a6a;
         line-height: 1.8rem;
         width: fit-content;
-        margin-right: 0;
+        margin: 1rem 0 2rem 0;
         padding: 0rem 4rem 0rem 4rem;
     }
     /*Hero section end*/
@@ -271,7 +273,7 @@
         font-size: 2rem;
         font-weight: 500;
         text-align: center;
-        margin-right: 0;
+        padding: 0rem 2rem 0rem 2rem;
     }
 
     .mobile-techstack h2{
@@ -296,6 +298,25 @@
     
     
     /*Project section right aligned start*/
+    .projectparent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0rem;
+        padding: 4rem 0rem 5rem 0rem;
+        background-color: rgb(250, 250, 250);
+    }
+
+    .projectcontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 0;
+    }
+
     .projectmainparent{
         display: flex;
         align-items: center;
@@ -396,8 +417,30 @@
     }
     
     /*Font sizes*/
+    .projectparent h1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: #597CFB;
+        margin: 0;
+    }
+
+    .projectparent p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        padding: 0 4rem;
+    }
+    
+    .projectcenter1 h1, .projectcenter2 h1{
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+        color: #6a6a6a;
+        margin: 0;
+    }
+
     .projectcenter1 h2, .projectcenter2 h2{
-        font-size: 1.4rem;
+        font-size: 1.9rem;
         font-weight: 500;
         text-align: center;
         margin-right: 0;
@@ -407,7 +450,7 @@
         font-size: 1.1rem;
         font-weight: 400;
         text-align: center;
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 1rem;
         color: #4a4a4a;
     }
 
