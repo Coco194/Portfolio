@@ -14,7 +14,7 @@ header{
     background-color: hsl(0, 0%, 100%, 0.98);
     justify-content: center;
     align-items: center;
-    padding: 0% 20% 0% 20%;
+    padding: 0% 20%;
     height: 5rem;
     gap: 26%;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
@@ -99,6 +99,7 @@ a {
     width: 28%;
     min-width: 460px;
     margin: 12rem 0rem 2rem 0rem;
+    padding: 0;
 }
 
 .sociallink{
@@ -127,7 +128,7 @@ a {
     font-size: 3rem;
     font-weight: 500;
     margin: 0;
-    margin-right: auto;
+    padding: 0;
 }
 
 .flexleft p{
@@ -136,8 +137,7 @@ a {
     color: #6a6a6a;
     line-height: 1.8rem;
     width: 26rem;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin: 1rem auto 2rem 0;
 }
 /*Hero section end*/
 
@@ -200,11 +200,13 @@ a {
 .mobile-techstack{
     display: none;
 }
+
 /*Font sizes, color etc*/
 .aboutflexright h1{
     font-size: 2rem;
     font-weight: 500;
     margin-right: auto;
+    padding: 0;
 }
 
 .aboutflexright h2{
@@ -219,7 +221,7 @@ a {
     line-height: 1.8rem;
     padding-right: 0rem;
     margin: 0;
-    color: #4a4a4a;
+    color: #6a6a6a;
 }
 /*About section end*/
 
@@ -227,21 +229,23 @@ a {
 
 
 /*Project section right aligned start*/
-.projectmainparent{
+.projectparent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
+    padding: 10rem 0rem 12rem 0rem;
+    background-color: rgb(250, 250, 250);
+}
+
+.projectcontainer{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 4rem;
-    padding: 10rem 0rem 12rem 0rem;
-    background-color: rgb(250, 250, 250);
-}
-
-.projecttopic{
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #597CFB;
-    margin: 0;
+    padding: 2rem 0 0 0;
 }
 
 .projectcenter1{
@@ -250,7 +254,7 @@ a {
     justify-content: center;
     flex-direction: row; /*Change to column reverse for mobile*/
     height: fit-content;
-    width: 55%;
+    width: 60%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
     background-color: white;
@@ -327,7 +331,7 @@ a {
     justify-content: center;
     flex-direction: row; /*Change to column reverse for mobile*/
     height: fit-content;
-    width: 55%;
+    width: 60%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
     background-color: white;
@@ -345,10 +349,30 @@ a {
 }
 
 /*Font sizes*/
-.projectcenter1 h2, .projectcenter2 h2{
-    font-size: 1.8rem;
+.projectparent h1{
+    font-size: 2rem;
     font-weight: 500;
-    margin-right: auto;
+    color: #597CFB;
+    margin: 0;
+}
+
+.projectparent p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.projectcenter1 h1, .projectcenter2 h1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6a6a6a;
+    margin: 0;
+}
+
+.projectcenter1 h2, .projectcenter2 h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000000;
+    margin: 0.5rem auto 1rem 0;
 }
 
 .projectcenter1 p, .projectcenter2 p{
@@ -392,7 +416,7 @@ a {
 }
 
 input{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Inter' sans-serif;
     font-weight: 400;
     width: 38rem;
@@ -506,7 +530,7 @@ footer h1{
 }
 
 footer p{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
     margin: 2rem 0rem 2rem 0rem;
