@@ -1,5 +1,13 @@
+/*Remove the #{insert sectionid} from the url after refreshing the page */
+window.addEventListener('load', function() {
+    history.replaceState({}, document.title, window.location.pathname);
+});
+//
+
+/*Logic for mobile navigation*/
 const headerbtn = document.querySelector('.hamburgericon');
 const mobilenav = document.querySelector('.mobile-navigation');
+const mobilenavitems = document.querySelector('.mobile-navigation-menu');
 
 //state is false when mobile nav is closed
 let isMobilenavOpen = false;
@@ -15,13 +23,21 @@ function openmenu(){
         document.body.style.overflowY = 'auto';
     }
 }
-headerbtn.addEventListener('click', openmenu)
 
+function mobilenavfunction(){
+    mobilenav.style.display = 'none';
+    document.body.style.overflowY = 'auto';
+}
+
+
+headerbtn.addEventListener('click', openmenu);
+mobilenavitems.addEventListener('click', mobilenavfunction);
+//
 
 
 
 //Intersection observer for the hero 
-let parentflex = document.querySelectorAll('.parentflex');
+let parentflex = document.querySelector('.parentflex');
 
 function hero_animation(entries){
     function innerfunction(entry){
@@ -33,12 +49,12 @@ function hero_animation(entries){
 }
 
 const hero_observer = new IntersectionObserver(hero_animation, {threshold:0.5})
-hero_observer.observe(parentflex[0])
+hero_observer.observe(parentflex)
 //
 
 
 //Intersection observer for about section
-let aboutparentflex = document.querySelectorAll('.aboutparentflex');
+let aboutparentflex = document.querySelector('.aboutparentflex');
 
 function about_animation(entries){
     function innerfunction(entry){
@@ -49,8 +65,8 @@ function about_animation(entries){
     entries.forEach(innerfunction)
 }
 
-const about_observer = new IntersectionObserver(about_animation, {threshold:0.15})
-about_observer.observe(aboutparentflex[0])
+const about_observer = new IntersectionObserver(about_animation, {threshold:0.14})
+about_observer.observe(aboutparentflex)
 //
 
 
@@ -70,7 +86,7 @@ function observe_each_project1(projectcenter1){
     project1.observe(projectcenter1)
 }
 
-const project1 = new IntersectionObserver(project_animation1, {threshold:0.4})
+const project1 = new IntersectionObserver(project_animation1, {threshold:0.1})
 projectcenter1.forEach(observe_each_project1)
 //
 
@@ -91,5 +107,6 @@ function observe_each_project2(projectcenter2){
     project2.observe(projectcenter2)
 }
 
-const project2 = new IntersectionObserver(project_animation2, {threshold:0.4})
+const project2 = new IntersectionObserver(project_animation2, {threshold:0.1})
 projectcenter2.forEach(observe_each_project2)
+//
