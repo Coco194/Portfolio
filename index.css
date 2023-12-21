@@ -14,7 +14,7 @@ header{
     background-color: hsl(0, 0%, 100%, 0.98);
     justify-content: center;
     align-items: center;
-    padding: 0% 20%;
+    padding: 0 22%;
     height: 5rem;
     gap: 26%;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
@@ -42,7 +42,7 @@ header{
 
 .navigation li:hover{
     transition: color 0.2s ease-out;
-    color: blue;
+    color: #557aff;
 }
 
 a {
@@ -52,6 +52,7 @@ a {
 
 #logo{
     min-width: 6rem;
+    /*color: #e69bae;*/
     color: #597CFB;
 }
 
@@ -119,15 +120,22 @@ a {
     margin-right: auto;
 }
 /*Font sizes, color etc*/
-#texthighlight{
-    color: #000000;
+#texthighlight1{
+    color: #0a0a0a;
+    font-weight: 500;
+}
+
+#texthighlight2{
+    color: #e69bae;
     font-weight: 500;
 }
 
 .flexleft h1{
-    font-size: 3rem;
+    font-size: 3.05rem;
     font-weight: 500;
-    margin: 0;
+    letter-spacing: -1.35px;
+    color: #020202;
+    margin: 0 auto 0 0;
     padding: 0;
 }
 
@@ -136,7 +144,7 @@ a {
     font-weight: 400;
     color: #6a6a6a;
     line-height: 1.8rem;
-    width: 26rem;
+    width: 28rem;
     margin: 1rem auto 2rem 0;
 }
 /*Hero section end*/
@@ -176,7 +184,7 @@ a {
     flex-direction: column;
     align-items: start;
     width: 100%;
-    margin: 1rem 0 0 0;
+    margin: 0;
 }
 
 .desktop-techstack ul{
@@ -205,23 +213,22 @@ a {
 .aboutflexright h1{
     font-size: 2rem;
     font-weight: 500;
-    margin-right: auto;
+    margin: 0 auto 0 0;
     padding: 0;
 }
 
 .aboutflexright h2{
     font-size: 1.5rem;
     font-weight: 500;
-    text-decoration: underline;
 }
 
 .aboutflexright p{
     font-size: 1.2rem;
     font-weight: 400;
+    color: #4a4a4a;    
     line-height: 1.8rem;
-    padding-right: 0rem;
-    margin: 0;
-    color: #6a6a6a;
+    margin: 1.5rem auto 2rem 0;    
+    padding-right: 0;
 }
 /*About section end*/
 
@@ -234,8 +241,8 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 0rem;
-    padding: 10rem 0rem 12rem 0rem;
+    gap: 0;
+    padding: 10rem 0 12rem 0;
     background-color: rgb(250, 250, 250);
 }
 
@@ -254,7 +261,7 @@ a {
     justify-content: center;
     flex-direction: row; /*Change to column reverse for mobile*/
     height: fit-content;
-    width: 60%;
+    width: 56.5%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
     background-color: white;
@@ -287,7 +294,7 @@ a {
     gap: 2rem;
     list-style: none;
     padding:0rem; 
-    padding-left: 0.5rem;
+    margin: 1.5rem 0 2rem 0;
 }
 
 .btnparent{
@@ -308,7 +315,7 @@ a {
     background-color: hsl(0, 0%, 92%);
     border-radius: 8px;
     border-style: none;
-    margin-top: 2rem;
+    margin-top: 0rem;
     cursor: pointer;
 }
 
@@ -331,7 +338,7 @@ a {
     justify-content: center;
     flex-direction: row; /*Change to column reverse for mobile*/
     height: fit-content;
-    width: 60%;
+    width: 56.5%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
     background-color: white;
@@ -352,19 +359,21 @@ a {
 .projectparent h1{
     font-size: 2rem;
     font-weight: 500;
-    color: #597CFB;
+    color: black;
     margin: 0;
 }
 
 .projectparent p{
     font-size: 1.2rem;
     font-weight: 400;
+    color: #2a2a2a;
+    margin: 0.5rem 0 1rem 0;
 }
 
 .projectcenter1 h1, .projectcenter2 h1{
     font-size: 0.9rem;
     font-weight: 500;
-    color: #6a6a6a;
+    color: #0a0a0a;
     margin: 0;
 }
 
@@ -380,6 +389,8 @@ a {
     font-weight: 400;
     color: #000000;
     line-height: 1.6rem;
+    margin: 0;
+    padding: 0;
 }
 
 .btnchild p{
@@ -419,7 +430,7 @@ input{
     font-size: 1rem;
     font-family: 'Inter' sans-serif;
     font-weight: 400;
-    width: 38rem;
+    width: 31.5rem;
     height: 2rem;
     padding: 0 1rem 0 1rem;
     border: 1px solid black;
@@ -430,7 +441,7 @@ textarea {
     font-size: 1.1rem;
     font-weight: 400;
     resize: vertical;
-    width: 38rem;  
+    width: 31.5rem;  
     height: 10rem;
     padding: 1rem 1rem 1rem 1rem;
     border: 1px solid black;
@@ -448,7 +459,7 @@ textarea {
     align-items: center;
     justify-content: center;
     height: 2.5rem;
-    width: 19.75rem;
+    width: 16.5rem;
     background-color: #597CFB;
     border: 1px solid #597CFB;
     border-radius: 10px;
@@ -460,7 +471,7 @@ textarea {
     align-items: center;
     justify-content: center;
     height: 2.5rem;
-    width: 19.75rem;
+    width: 16.5rem;
     background-color: white;
     border: 1px solid #597CFB;
     border-radius: 10px;
@@ -472,7 +483,7 @@ textarea {
 .contactchild h1{
     font-size: 1.6rem;
     font-weight: 500;
-    color: #597CFB;
+    color: #000000;
     margin: 0;
 }
 
@@ -504,7 +515,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0% 20% 0% 20%;
+    padding: 0 20% 0 20%;
     gap: 25%;
 
 }
@@ -517,7 +528,7 @@ footer{
 
 .horizontal-line{
     height: 1px;
-    width: 40rem;
+    width: 34rem;
     background-color: #cbd7ff;
 }
 
