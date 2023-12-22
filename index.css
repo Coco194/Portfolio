@@ -47,10 +47,12 @@ header{
 
 a {
     text-decoration: none;
-    color: black;
+    color: #0a0a0a;
 }
 
 #logo{
+    font-weight: 500;
+    letter-spacing: -0.25px;
     min-width: 6rem;
     /*color: #e69bae;*/
     color: #597CFB;
@@ -134,7 +136,8 @@ a {
     font-size: 3.05rem;
     font-weight: 500;
     letter-spacing: -1.35px;
-    color: #020202;
+    line-height: 3.8rem; /*1.25 x Font size*/
+    color: #0a0a0a;
     margin: 0 auto 0 0;
     padding: 0;
 }
@@ -142,8 +145,8 @@ a {
 .flexleft p{
     font-size: 1.2rem;
     font-weight: 400;
-    color: #6a6a6a;
-    line-height: 1.8rem;
+    color: #4a4a4a;
+    line-height: 1.8rem; /*1.5 x Font size*/
     width: 28rem;
     margin: 1rem auto 2rem 0;
 }
@@ -211,8 +214,11 @@ a {
 
 /*Font sizes, color etc*/
 .aboutflexright h1{
-    font-size: 2rem;
+    font-size: 2.05rem;
     font-weight: 500;
+    letter-spacing: -1.35px;
+    line-height: 2.56rem; /*1.25 x Font size*/
+    color: #0a0a0a;
     margin: 0 auto 0 0;
     padding: 0;
 }
@@ -220,14 +226,17 @@ a {
 .aboutflexright h2{
     font-size: 1.5rem;
     font-weight: 500;
+    letter-spacing: -1.35px;
+    color: #0a0a0a;
+    margin: 1rem 0;
 }
 
 .aboutflexright p{
     font-size: 1.2rem;
     font-weight: 400;
-    color: #4a4a4a;    
-    line-height: 1.8rem;
-    margin: 1.5rem auto 2rem 0;    
+    color: #4a4a4a;
+    line-height: 1.8rem; /*1.5 x Font size*/
+    margin: 1rem 0 1.5rem 0;    
     padding-right: 0;
 }
 /*About section end*/
@@ -264,7 +273,7 @@ a {
     width: 56.5%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 22px;
     padding: 1rem;
     gap: 4rem;
@@ -281,9 +290,8 @@ a {
 .project-techstack{
     display: flex;
     align-items: center;
-    margin-right: auto;    
     width: 100%;
-    margin-top: 0rem;
+    margin: 0 auto 0 0;
 }
 
 .project-techstack ul{
@@ -293,14 +301,13 @@ a {
     flex-direction: row;
     gap: 2rem;
     list-style: none;
+    margin: 1.5rem 0 2rem 0;    
     padding:0rem; 
-    margin: 1.5rem 0 2rem 0;
 }
 
 .btnparent{
     display: flex;
     align-items: center;
-    margin-right: auto;
     gap: 1rem;
 }
 
@@ -341,7 +348,7 @@ a {
     width: 56.5%;
     min-width: 900px;
     box-shadow: 0px 0px 4px rgb(146, 146, 146);
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 22px;
     padding: 1rem;
     gap: 4rem;
@@ -357,16 +364,17 @@ a {
 
 /*Font sizes*/
 .projectparent h1{
-    font-size: 2rem;
+    font-size: 2.05rem;
     font-weight: 500;
-    color: black;
+    letter-spacing: -1.35px;
+    color: #0a0a0a;
     margin: 0;
 }
 
 .projectparent p{
     font-size: 1.2rem;
     font-weight: 400;
-    color: #2a2a2a;
+    color: #4a4a4a;
     margin: 0.5rem 0 1rem 0;
 }
 
@@ -380,14 +388,14 @@ a {
 .projectcenter1 h2, .projectcenter2 h2{
     font-size: 2rem;
     font-weight: 500;
-    color: #000000;
+    color: #0a0a0a;
     margin: 0.5rem auto 1rem 0;
 }
 
 .projectcenter1 p, .projectcenter2 p{
     font-size: 1.1rem;
     font-weight: 400;
-    color: #000000;
+    color: #2a2a2a;
     line-height: 1.6rem;
     margin: 0;
     padding: 0;
@@ -396,7 +404,7 @@ a {
 .btnchild p{
     font-size: 1rem;
     font-weight: 400;
-    color: black;
+    color: #0a0a0a;
     padding: 0;
 }
 /*Project section left aligned end*/
@@ -410,9 +418,8 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-color: white;
+    padding: 8rem 0;
+    background-color: #ffffff;
 }
 
 .contactchild{
@@ -432,8 +439,8 @@ input{
     font-weight: 400;
     width: 31.5rem;
     height: 2rem;
-    padding: 0 1rem 0 1rem;
-    border: 1px solid black;
+    padding: 0 1rem;
+    border: 1px solid #0a0a0a;
     border-radius: 10px;
 }
 
@@ -443,8 +450,8 @@ textarea {
     resize: vertical;
     width: 31.5rem;  
     height: 10rem;
-    padding: 1rem 1rem 1rem 1rem;
-    border: 1px solid black;
+    padding: 1rem;
+    border: 1px solid #0a0a0a;
     border-radius: 10px;
 }
 
@@ -472,7 +479,7 @@ textarea {
     justify-content: center;
     height: 2.5rem;
     width: 16.5rem;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #597CFB;
     border-radius: 10px;
     cursor: pointer;
@@ -480,18 +487,19 @@ textarea {
 
 
 /*font sizes*/
-.contactchild h1{
-    font-size: 1.6rem;
+.contactparent h1{
+    font-size: 2.05rem;
     font-weight: 500;
-    color: #000000;
+    letter-spacing: -1.35px;
+    color: #0a0a0a;
     margin: 0;
 }
 
-.contactchild h2{
-    width: 40rem;
+.contactparent h2{
     font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 0rem;
+    font-weight: 400;
+    color: #4a4a4a;
+    margin: 0.5rem 0 1.5rem 0;
     text-align: center;
 }
 
@@ -515,7 +523,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20% 0 20%;
+    padding: 0 20%;
     gap: 25%;
 
 }
@@ -544,6 +552,6 @@ footer p{
     font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem;
 }
 /*Footer end*/
