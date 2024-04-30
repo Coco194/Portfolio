@@ -1,0 +1,73 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding-top: 5rem;
+    margin: 0;
+}
+
+/*Header start*/
+header{
+    display: flex;
+    background-color: hsl(0, 0%, 100%, 0.98);
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    gap: 16rem;
+    box-shadow: 0px 0px 4px rgb(146, 146, 146);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigation{
+    display: flex; 
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    padding:0rem; 
+}
+
+.navigation li{
+    width: 4rem;
+    text-align: center;
+    padding:0rem;  
+    cursor: pointer;
+}
+
+.navigation li:hover{
+    transition: color 0.2s ease-out;
+    color: #557aff;
+}
+
+a {
+    text-decoration: none;
+    color: #0a0a0a;
+}
+
+#logo{
+    font-weight: 500;
+    letter-spacing: -0.25px;
+    min-width: 6rem;
+    /*color: #e69bae;*/
+    color: #597CFB;
+}
+
+#contactbtn{
+    min-width: 6rem;
+}
+
+
+
+.hamburgericon{
+    display: none;
+}
+
+.mobile-navigation{
+    display: none;
+}
+/*Header end*/
